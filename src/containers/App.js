@@ -1,7 +1,8 @@
 import React from 'react';
 import {Route, Link, withRouter} from 'react-router-dom';
 import About from './about';
-import '../App.css';
+//import '../App.css';
+import '../Bass.css';
 import HomePage from './HomePage';
 import CoinPage from './CoinPage';
 import {
@@ -59,9 +60,9 @@ class App extends React.Component {
           <Navbar color="faded" light toggleable>
             <Container>
               <NavbarToggler right onClick={this.toggle}/>
-              <NavbarBrand href="/">Blockshare.io</NavbarBrand>
+              <NavbarBrand className="caps bold" href="/">Blockshare.io</NavbarBrand>
               <Collapse isOpen={false} navbar>
-                <Nav className="ml-auto" navbar>
+                <Nav className="ml-auto caps bold" navbar>
                   <NavItem className="mr-2">
                     <Link to="/about-us">About</Link>
                   </NavItem>
