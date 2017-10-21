@@ -29,11 +29,12 @@ window.axios = require('axios');
 class App extends React.Component {
 
   componentDidMount() {
-    let user;
+    let userData, user;
     const blockstack = window.blockstack;
     //
     if (blockstack.isUserSignedIn()) {
-      user = blockstack.loadUserData().profile;
+      userData = blockstack.loadUserData();
+      user = new blockstack.Person(userData.profile);
       this.props.signinSuccess(user);
       this.props.loadHoldings();
     } else if (blockstack.isSignInPending()) {
@@ -55,6 +56,13 @@ class App extends React.Component {
               <a href="#" onClick={() => this.props.signout()}>Logout</a>
             </NavItem>
         ) : null;
+
+    const image = user ? (
+        <NavItem>
+          <img src={this.props.user.avatarUrl()} />
+        </NavItem>
+      ) : null;
+
     return (
         <div className="App">
           <Navbar color="faded" light toggleable>
@@ -67,6 +75,7 @@ class App extends React.Component {
                     <Link to="/about-us">About</Link>
                   </NavItem>
                   {signoutButton}
+                  {image}
                 </Nav>
               </Collapse>
             </Container>
