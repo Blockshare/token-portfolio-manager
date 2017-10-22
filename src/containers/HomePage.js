@@ -1,5 +1,6 @@
 import React from 'react';
 import './Holding.css';
+import '../Bass.css';
 import {Row, Col, Container, Button} from 'reactstrap';
 import Tabs from '../components/Tabs';
 import CurrencySelector from '../components/CurrencySelector';
@@ -31,11 +32,17 @@ class HomePage extends React.Component {
   }
 
   render() {
-    const signInButton = (
+    /*const signInButton = (
         <div className="mt-4">
           <p>To manage your portfolio please <a onClick={this.signin} href="#">log in with
             Blockstack</a></p>
         </div>
+    )*/
+
+    const signInButton = (
+      <div className="mt-4 overlay">
+        <button className="btn not-rounded" onClick={this.signin}>Log In</button>
+      </div>
     )
 
     const portfoChange = (

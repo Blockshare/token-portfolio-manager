@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Link, withRouter} from 'react-router-dom';
 import About from './about';
-//import '../App.css';
+import '../App.css';
 import '../Bass.css';
 import HomePage from './HomePage';
 import CoinPage from './CoinPage';
@@ -29,11 +29,12 @@ window.axios = require('axios');
 class App extends React.Component {
 
   componentDidMount() {
-    let user;
+    let userData, user;
     const blockstack = window.blockstack;
     //
     if (blockstack.isUserSignedIn()) {
-      user = blockstack.loadUserData().profile;
+      userData = blockstack.loadUserData();
+      user = new blockstack.Person(userData.profile);
       this.props.signinSuccess(user);
       this.props.loadHoldings();
     } else if (blockstack.isSignInPending()) {
@@ -50,11 +51,20 @@ class App extends React.Component {
 
     const user = this.props.user;
 
+    // Signout functionality
     const signoutButton = user ? (
             <NavItem>
-              <a href="#" onClick={() => this.props.signout()}>Logout</a>
+              <a href="#" onClick={() => this.props.signout()}>Sign Out</a>
             </NavItem>
         ) : null;
+
+    // Load Blockstack Identity Image.
+    const image = user ? (
+        <div>
+          <img className="rounded-top" src={this.props.user.avatarUrl()} width="64" height="64" />
+        </div>
+      ) : null;
+
     return (
         <div className="App">
           <Navbar color="faded" light toggleable>
@@ -67,6 +77,7 @@ class App extends React.Component {
                     <Link to="/about-us">About</Link>
                   </NavItem>
                   {signoutButton}
+                  {image}
                 </Nav>
               </Collapse>
             </Container>
