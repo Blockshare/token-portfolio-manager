@@ -64,18 +64,5 @@ export default class CurrencySelector extends React.Component {
         </FormGroup>
 
     )
-    // return (
-    //     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-    //       <DropdownToggle caret>
-    //         USD
-    //       </DropdownToggle>
-    //       <DropdownMenu>
-    //         <DropdownItem>EUR</DropdownItem>
-    //         <DropdownItem>USD</DropdownItem>
-    //         <DropdownItem>CNY</DropdownItem>
-    //         <DropdownItem>BTC</DropdownItem>
-    //       </DropdownMenu>
-    //     </Dropdown>
-    // );
   }
 }
