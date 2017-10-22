@@ -4,6 +4,7 @@ import '../Bass.css';
 import {Row, Col, Container, Button} from 'reactstrap';
 import Tabs from '../components/Tabs';
 import CurrencySelector from '../components/CurrencySelector';
+import CurrencySearch from '../components/CryptoCurrencySearch'; // Import Currency Search Bar for easier access.
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {changeCurrency, loadCoinList} from '../modules/coin';
