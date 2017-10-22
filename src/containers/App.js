@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Link, withRouter} from 'react-router-dom';
 import About from './about';
-//import '../App.css';
+import '../App.css';
 import '../Bass.css';
 import HomePage from './HomePage';
 import CoinPage from './CoinPage';
@@ -51,16 +51,18 @@ class App extends React.Component {
 
     const user = this.props.user;
 
+    // Signout functionality
     const signoutButton = user ? (
             <NavItem>
-              <a href="#" onClick={() => this.props.signout()}>Logout</a>
+              <a href="#" onClick={() => this.props.signout()}>Sign Out</a>
             </NavItem>
         ) : null;
 
+    // Load Blockstack Identity Image.
     const image = user ? (
-        <NavItem>
-          <img src={this.props.user.avatarUrl()} />
-        </NavItem>
+        <div>
+          <img className="rounded-top" src={this.props.user.avatarUrl()} width="64" height="64" />
+        </div>
       ) : null;
 
     return (
