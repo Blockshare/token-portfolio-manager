@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Link, withRouter} from 'react-router-dom';
 import About from './about';
-import '../App.css';
+//import '../App.css';
 import '../Bass.css';
 import HomePage from './HomePage';
 import CoinPage from './CoinPage';
@@ -56,9 +56,9 @@ class App extends React.Component {
 
     // Signout functionality
     const signoutButton = user ? (
-            <NavItem>
-              <a href="#" onClick={() => this.props.signout()}>Sign Out</a>
-            </NavItem>
+            <div>
+              <button className="btn not-rounded" type="submit" onClick={() => this.props.signout()}>Sign Out</button>
+            </div>
         ) : null;
 
     // Load Blockstack Identity Image.
@@ -79,10 +79,10 @@ class App extends React.Component {
                   <NavItem className="mr-2">
                     <Link to="/about-us">About</Link>
                   </NavItem>
-                  {signoutButton}
-                  {image}
                 </Nav>
               </Collapse>
+              {image}
+              {signoutButton}
             </Container>
 
           </Navbar>
