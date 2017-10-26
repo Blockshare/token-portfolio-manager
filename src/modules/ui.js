@@ -1,6 +1,3 @@
-/**
- * Created by nasir on 01/10/2017.
- */
 export const INPUT_VALUE_CHANGE = 'ui/INPUT_VALUE_CHANGE'
 
 const initialState = {
