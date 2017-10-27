@@ -42,7 +42,7 @@ class HomePage extends React.Component {
 
     const signInButton = (
       <div className="mt-4 overlay">
-        <button className="btn not-rounded" onClick={this.signin}>Log In</button>
+        <button className="btn not-rounded" onClick={this.signin}>Sign In with Blockstack</button>
       </div>
     )
 
