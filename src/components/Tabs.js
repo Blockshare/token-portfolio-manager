@@ -40,7 +40,7 @@ export default class Tabs extends React.Component {
             />) : emptyState;
     const holdingsTabLoading = !this.props.user || this.props.holdingsList.length > 0 ? null :
         <Loading />
-    return (
+    /* return (
         <div className="container">
           <Nav tabs className="nav-justified">
             <NavItem>
@@ -84,6 +84,11 @@ export default class Tabs extends React.Component {
             </TabPane>
           </TabContent>
         </div>
+    ); */
+    return (
+      <div>
+        { holdingContent }
+      </div>
     );
   }
 }
