@@ -3,6 +3,7 @@ import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Button} from 'reac
 import classnames from 'classnames';
 import CoinList from './CoinList';
 import Loading from './Loading';
+import {message} from '../modules/message';
 
 export default class Tabs extends React.Component {
   constructor(props) {
@@ -26,8 +27,7 @@ export default class Tabs extends React.Component {
 
     const emptyState = (
         <div className="text-center mt-4">
-          <p>You have no holdings at the moment. You can choose a coin and add your holdings
-            there.</p>
+          <p>{message.holdingMessage}</p>
         </div>
     );
 
@@ -40,9 +40,9 @@ export default class Tabs extends React.Component {
             />) : emptyState;
     const holdingsTabLoading = !this.props.user || this.props.holdingsList.length > 0 ? null :
         <Loading />
-    /* return (
+    return (
         <div className="container">
-          <Nav tabs className="nav-justified">
+          <Nav tabs className="nav-pills">
             <NavItem>
               <NavLink
                   className={classnames({ active: this.state.activeTab === '1' })}
@@ -50,7 +50,7 @@ export default class Tabs extends React.Component {
                     this.toggle('1');
                   }}
               >
-                Top Coins
+                {message.cryptoAssets}
               </NavLink>
             </NavItem>
             <NavItem>
@@ -60,7 +60,7 @@ export default class Tabs extends React.Component {
                     this.toggle('2');
                   }}
               >
-                Holdings {holdingsTabLoading}
+                {message.holdings} {holdingsTabLoading}
               </NavLink>
             </NavItem>
           </Nav>
@@ -84,11 +84,6 @@ export default class Tabs extends React.Component {
             </TabPane>
           </TabContent>
         </div>
-    ); */
-    return (
-      <div>
-        { holdingContent }
-      </div>
     );
   }
 }
