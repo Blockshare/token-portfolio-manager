@@ -17,6 +17,7 @@ import {
 } from '../modules/account';
 import numeral from 'numeral';
 import {formatMoney} from '../utils';
+import {message} from '../modules/message';
 
 class HomePage extends React.Component {
   static PropTypes = {}
@@ -42,28 +43,28 @@ class HomePage extends React.Component {
 
     const signInButton = (
       <div className="mt-4 overlay">
-        <button className="btn not-rounded" onClick={this.signin}>Sign In with Blockstack</button>
+        <button className="btn not-rounded" onClick={this.signin}>{message.signInButton}</button>
       </div>
     )
 
-    const portfoChange = (
+    const currencyChange = (
         <span className={this.props.porfolioValueChange > 0 ? 'text-success' : 'text-danger'}>
           {formatMoney(this.props.currency, this.props.porfolioValueChange)}
           {this.props.porfolioValueChange > 0 ? '↑' : '↓'}
         </span>);
-    const portfoValue = (
+    const currencyValue = (
         <h3>{formatMoney(this.props.currency, this.props.portfolioValue)}<br/>
-          <small className="text-muted">Holdings</small>
+          <small className="text-muted">{message.holdings}</small>
         </h3>
     )
 
-    const portfoChangeEl = this.props.user ?  (
+    const currencyChangeEl = this.props.user ?  (
         <h3>
-          {portfoChange}<br/>
+          {currencyChange}<br/>
           <small className="text-muted">24h Change</small>
         </h3>
     ): null;
-    const header = !!this.props.user ? portfoValue : signInButton
+    const header = !!this.props.user ? currencyValue : signInButton
     return (
         <Container>
           <Row className="mt-5 mb-5">
@@ -71,7 +72,7 @@ class HomePage extends React.Component {
               {header}
             </Col>
             <Col xs="5" sm="5">
-              {portfoChangeEl}
+              {currencyChangeEl}
             </Col>
             <Col xs="2" sm="2">
               <CurrencySelector currency={this.props.currency}

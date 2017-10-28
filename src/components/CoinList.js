@@ -12,7 +12,7 @@ export default class CoinList extends React.Component {
         key={row.id}
         holdings={holdings[row.id]}
         coin={row}/>);
-    /*return (
+    return (
         <Table>
           <thead>
           <tr>
@@ -28,11 +28,6 @@ export default class CoinList extends React.Component {
           {rows}
           </tbody>
         </Table>
-    );*/
-    return (
-      <div>
-        { rows }
-      </div>
     );
   }
 }
