@@ -1,6 +1,5 @@
 export const message = {
 	appname: 'Blockshare.io',
-	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
 	cryptoAssets: 'Cryptoassets',
 	holdings: 'Personal Holdings',
@@ -13,4 +12,9 @@ export const tableMessage = {
 	marketCap: 'Market Cap',
 	change: '(%) change',
 	holdings: 'Holdings'
+};
+
+export const buttons = {
+	signInButton: 'Log In with Blockstack',
+	signOutButton: 'Log Out'
 };
