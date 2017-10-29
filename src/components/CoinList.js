@@ -1,6 +1,7 @@
 import React from 'react';
 import {Table} from 'reactstrap';
-import CoinRow from './CoinRow'
+import CoinRow from './CoinRow';
+import {tableMessage} from '../modules/message';
 import '../Bass.css';
 
 export default class CoinList extends React.Component {
@@ -17,11 +18,11 @@ export default class CoinList extends React.Component {
           <thead>
           <tr>
             <th></th>
-            <th>Coin</th>
-            <th>Price</th>
-            <th>Market Cap</th>
-            <th>24hr Change (%)</th>
-            <th>Holdings<br/>24h Change</th>
+            <th>{tableMessage.asset}</th>
+            <th>{tableMessage.price}</th>
+            <th>{tableMessage.marketCap}</th>
+            <th>{tableMessage.change}</th>
+            <th>{tableMessage.holdings}</th>
           </tr>
           </thead>
           <tbody>
