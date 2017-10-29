@@ -17,7 +17,9 @@ import {
 } from '../modules/account';
 import numeral from 'numeral';
 import {formatMoney} from '../utils';
-import {message} from '../modules/message';
+import {message,
+        buttons
+} from '../modules/message';
 
 class HomePage extends React.Component {
   static PropTypes = {}
@@ -36,7 +38,7 @@ class HomePage extends React.Component {
   render() {
     const signInButton = (
       <div className="mt-4 overlay">
-        <button className="btn not-rounded" onClick={this.signin}>{message.signInButton}</button>
+        <button className="btn not-rounded" onClick={this.signin}>{buttons.signInButton}</button>
       </div>
     )
 
