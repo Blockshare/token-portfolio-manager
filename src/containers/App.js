@@ -15,6 +15,7 @@ import {
   Container,
   Button
 } from 'reactstrap';
+import {message} from '../modules/message';
 import {signinSuccess, signout, loadHoldings, updateHoldings} from '../modules/account';
 import {loadCoinList} from '../modules/coin';
 import {bindActionCreators} from 'redux';
@@ -64,25 +65,26 @@ class App extends React.Component {
     // Load Blockstack Identity Image.
     const image = user ? (
         <div>
-          <img className="rounded-top" src={this.props.user.avatarUrl()} width="64" height="64" />
+          <img className="circle" src={this.props.user.avatarUrl()} width="64" height="64" />
         </div>
       ) : null;
 
     return (
         <div className="App">
-          <Navbar color="faded" light toggleable>
+          <Navbar color="faded">
             <Container>
               <NavbarToggler right onClick={this.toggle}/>
-              <NavbarBrand className="caps bold" href="/">Blockshare.io</NavbarBrand>
+              <NavbarBrand className="left-align caps bold">{message.appname}</NavbarBrand>
+              <NavbarBrand className="caps bold" href="/">{image}</NavbarBrand>
               <Collapse isOpen={false} navbar>
                 <Nav className="ml-auto caps bold" navbar>
                   <NavItem className="mr-2">
-                    <Link to="/about-us">About</Link>
+                    <Link to="/about-us">{message.about}</Link>
                   </NavItem>
                 </Nav>
               </Collapse>
-              {image}
-              {signoutButton}
+              <div>{signoutButton}</div>
+              <Link className="right-align" to="/about-us">{message.about}</Link>
             </Container>
 
           </Navbar>
