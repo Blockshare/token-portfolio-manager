@@ -17,7 +17,7 @@ import {
 } from 'reactstrap';
 import {signinSuccess, signout, loadHoldings, updateHoldings} from '../modules/account';
 import {loadCoinList} from '../modules/coin';
-import {buttons} from '../modules/message';
+import {buttons, message} from '../modules/message';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
@@ -71,19 +71,20 @@ class App extends React.Component {
 
     return (
         <div className="App">
-          <Navbar color="faded" light toggleable>
+          <Navbar color="faded">
             <Container>
               <NavbarToggler right onClick={this.toggle}/>
-              <NavbarBrand className="caps bold" href="/">Blockshare.io</NavbarBrand>
+              <NavbarBrand className="caps bold">{message.appname}</NavbarBrand>
               <Collapse isOpen={false} navbar>
                 <Nav className="ml-auto caps bold" navbar>
                   <NavItem className="mr-2">
-                    <Link to="/about-us">About</Link>
+                    <Link to="/about">{message.about}</Link>
                   </NavItem>
                 </Nav>
               </Collapse>
               {image}
               {signoutButton}
+              <Link to="/about-us">{message.about}</Link>
             </Container>
 
           </Navbar>
@@ -93,7 +94,7 @@ class App extends React.Component {
             <Route exact path="/about-us" component={About}/>
           </main>
         </div>
-    )
+    ) 
   }
 }
 
