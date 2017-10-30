@@ -18,6 +18,7 @@ import {
 import {message} from '../modules/message';
 import {signinSuccess, signout, loadHoldings, updateHoldings} from '../modules/account';
 import {loadCoinList} from '../modules/coin';
+import {buttons} from '../modules/message';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
@@ -58,7 +59,7 @@ class App extends React.Component {
     // Signout functionality
     const signoutButton = user ? (
             <div>
-              <button className="btn not-rounded" type="submit" onClick={() => this.props.signout()}>Sign Out</button>
+              <button className="btn not-rounded" type="submit" onClick={() => this.props.signout()}>{buttons.signOutButton}</button>
             </div>
         ) : null;
 
