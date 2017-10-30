@@ -19,6 +19,10 @@ export const tableMessage = {
 export const coinPage = {
 	price: 'Current Price',
 	marketCap: 'Market Cap',
-	volume: '24 Hour Volume',
-	
-}
+	volume: '24 Hour Volume'
+};
+
+export const buttons = {
+	signInButton: 'Sign In with Blockstack',
+	signOutButton: 'Sign Out'
+};
