@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import CoinHoldingBox from '../components/CoinHoldingBox';
 import {updateHoldings} from '../modules/account';
+import {coinPage} from '../modules/message';
 import {loadCoin, loadCoinChartData, clearChart, loadOrderBook} from '../modules/coin';
 import {updateHoldingInput} from '../modules/ui';
 import numeral from 'numeral';
@@ -71,19 +72,19 @@ class CoinPage extends React.Component {
           <Row className="mt-4">
             <Col>
               <h5>
-                Current Price<br/>
+                {coinPage.price}<br/>
                 <small className="text-muted">{formatMoney(currency, price)}</small>
               </h5>
             </Col>
             <Col>
               <h5>
-                Market Cap<br/>
+                {coinPage.marketCap}<br/>
                 <small className="text-muted">{market_cap} {currency}</small>
               </h5>
             </Col>
             <Col>
               <h5>
-                24 Hour Volume<br/>
+                {coinPage.volume}<br/>
                 <small className="text-muted">{volume} {currency}</small>
               </h5>
             </Col>
