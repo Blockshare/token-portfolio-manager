@@ -8,14 +8,20 @@ export const message = {
 };
 
 export const tableMessage = {
-	asset: 'Cryptoasset',
+	asset: 'Symbol',
 	price: 'Price',
 	marketCap: 'Market Cap',
 	change: '(%) change',
 	holdings: 'Holdings'
 };
 
+export const coinPage = {
+	price: 'Current Price',
+	marketCap: 'Market Cap',
+	volume: '24 Hour Volume'
+};
+
 export const buttons = {
-	signInButton: 'Log In with Blockstack',
-	signOutButton: 'Log Out'
+	signInButton: 'Sign In with Blockstack',
+	signOutButton: 'Sign Out'
 };

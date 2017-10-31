@@ -15,6 +15,7 @@ import {
   Container,
   Button
 } from 'reactstrap';
+import {message} from '../modules/message';
 import {signinSuccess, signout, loadHoldings, updateHoldings} from '../modules/account';
 import {loadCoinList} from '../modules/coin';
 import {buttons, message} from '../modules/message';
@@ -74,17 +75,17 @@ class App extends React.Component {
           <Navbar color="faded">
             <Container>
               <NavbarToggler right onClick={this.toggle}/>
-              <NavbarBrand className="caps bold">{message.appname}</NavbarBrand>
+              <NavbarBrand className="left-align caps bold">{message.appname}</NavbarBrand>
+              <NavbarBrand className="caps bold" href="/">{image}</NavbarBrand>
               <Collapse isOpen={false} navbar>
                 <Nav className="ml-auto caps bold" navbar>
                   <NavItem className="mr-2">
-                    <Link to="/about">{message.about}</Link>
+                    <Link to="/about-us">{message.about}</Link>
                   </NavItem>
                 </Nav>
               </Collapse>
-              {image}
-              {signoutButton}
-              <Link to="/about-us">{message.about}</Link>
+              <div>{signoutButton}</div>
+              <Link className="right-align" to="/about-us">{message.about}</Link>
             </Container>
 
           </Navbar>
