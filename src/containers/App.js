@@ -18,7 +18,7 @@ import {
 import {message} from '../modules/message';
 import {signinSuccess, signout, loadHoldings, updateHoldings} from '../modules/account';
 import {loadCoinList} from '../modules/coin';
-import {buttons} from '../modules/message';
+import {buttons, message} from '../modules/message';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
@@ -95,7 +95,7 @@ class App extends React.Component {
             <Route exact path="/about-us" component={About}/>
           </main>
         </div>
-    )
+    ) 
   }
 }
 
