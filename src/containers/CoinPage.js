@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import CoinHoldingBox from '../components/CoinHoldingBox';
 import {updateHoldings} from '../modules/account';
-import {coinPage} from '../modules/message';
+import {coinPage, hourlyChanges} from '../modules/message';
 import {loadCoin, loadCoinChartData, clearChart, loadOrderBook} from '../modules/coin';
 import {updateHoldingInput} from '../modules/ui';
 import numeral from 'numeral';
@@ -90,13 +90,13 @@ class CoinPage extends React.Component {
             </Col>
             <Col>
               <div className={change_1h < 0 ? "text-danger" : "text-success"}>
-                1H {change_1h}%
+                {hourlyChanges.one} {change_1h}%
               </div>
               <div className={change_24h < 0 ? "text-danger" : "text-success"}>
-                24H {change_24h}%
+                {hourlyChanges.twentyFour} {change_24h}%
               </div>
               <div className={change_7d < 0 ? "text-danger" : "text-success"}>
-                7D {change_7d}%
+                {hourlyChanges.sevenDays} {change_7d}%
               </div>
             </Col>
           </Row>

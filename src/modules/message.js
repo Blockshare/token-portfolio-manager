@@ -26,3 +26,9 @@ export const buttons = {
 	signInButton: 'Sign In with Blockstack',
 	signOutButton: 'Sign Out'
 };
+
+export const hourlyChanges = {
+	one: 'Hourly (%):',
+	twentyFour: 'Daily (%):',
+	sevenDays: 'Weekly (%):'
+};
