@@ -3,7 +3,7 @@ import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Button} from 'reac
 import classnames from 'classnames';
 import CoinList from './CoinList';
 import Loading from './Loading';
-import {message} from '../modules/message';
+import {message, tabs} from '../modules/message';
 
 export default class Tabs extends React.Component {
   constructor(props) {
@@ -50,7 +50,7 @@ export default class Tabs extends React.Component {
                     this.toggle('1');
                   }}
               >
-                {message.cryptoAssets}
+                {tabs.cryptoAssets}
               </NavLink>
             </NavItem>
             <NavItem>
@@ -60,7 +60,17 @@ export default class Tabs extends React.Component {
                     this.toggle('2');
                   }}
               >
-                {message.holdings} {holdingsTabLoading}
+                {tabs.holdings} {holdingsTabLoading}
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className={classnames({ active: this.state.activeTab === '3'})}
+                onClick={() => {
+                  this.toggle('3')
+                }}
+              >
+              {tabs.news}
               </NavLink>
             </NavItem>
           </Nav>
