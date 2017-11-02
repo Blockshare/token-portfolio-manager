@@ -1,5 +1,6 @@
 import React from 'react';
 import numeral from 'numeral';
+import {coinPageInfo} from '../modules/message';
 import {Form, FormGroup, Input, InputGroup, InputGroupAddon} from 'reactstrap';
 
 export default class CoinHoldingBox extends React.Component {
@@ -67,7 +68,7 @@ export default class CoinHoldingBox extends React.Component {
                   <InputGroupAddon>{coin.symbol}</InputGroupAddon>
                 </InputGroup>
               </FormGroup>
-              <small className="text-muted">Holdings</small>
+              <small className="text-muted">{coinPageInfo.holdings}</small>
             </h4>
           </Form>
           <div>
@@ -80,7 +81,7 @@ export default class CoinHoldingBox extends React.Component {
     const viewElem = (
         <div>
           <h4>{this.props.value} {coin.symbol}
-            <small className="text-muted"><br/>Holdings</small>
+            <small className="text-muted"><br/>{coinPageInfo.holdings}</small>
           </h4>
           {editLinkElem}
         </div>
