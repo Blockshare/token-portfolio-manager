@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import PriceChart from './PriceChart';
 import OrderBook from './OrderBook';
 import OrderBookTable from './OrderBookTable'
+import {orderBook} from '../modules/message';
 
 export default class CoinPageTabs extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class CoinPageTabs extends React.Component {
                     this.toggle('1');
                   }}
               >
-                Price
+                {orderBook.price}
               </NavLink>
             </NavItem>
             <NavItem>
@@ -45,7 +46,7 @@ export default class CoinPageTabs extends React.Component {
                     this.toggle('2');
                   }}
               >
-                Order book
+                {orderBook.orderbook}
               </NavLink>
             </NavItem>
           </Nav>
@@ -76,11 +77,11 @@ export default class CoinPageTabs extends React.Component {
               </Row>
               <Row className="mt-3">
                 <Col>
-                  <h5>Bids</h5>
+                  <h5>{orderBook.bids}</h5>
                   <OrderBookTable data={this.props.orderBookData.bids}/>
                 </Col>
                 <Col>
-                  <h5>Asks</h5>
+                  <h5>{orderBook.asks}</h5>
                   <OrderBookTable data={this.props.orderBookData.asks}/>
                 </Col>
               </Row>

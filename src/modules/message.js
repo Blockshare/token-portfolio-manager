@@ -3,9 +3,14 @@ export const message = {
 	about: 'About',
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
+	holdingMessage: 'There are currently no cryptoassets in your market basket.',
+	newsMessage: 'News Will Go Here'
+};
+
+export const tabs = {
 	cryptoAssets: 'Cryptoassets',
-	holdings: 'Personal Holdings',
-	holdingMessage: 'There are currently no cryptoassets in your market basket.'
+	holdings: 'Portfolio',
+	news: 'Daily News Stream'
 };
 
 export const tableMessage = {
@@ -31,4 +36,15 @@ export const hourlyChanges = {
 	one: 'Hourly (%):',
 	twentyFour: 'Daily (%):',
 	sevenDays: 'Weekly (%):'
+};
+
+export const coinPageInfo = {
+	holdings: 'Holdings'
+};
+
+export const orderBook = {
+	price: 'price',
+	orderbook: 'Order Book',
+	bids: 'Bids',
+	asks: 'Asks'
 };
