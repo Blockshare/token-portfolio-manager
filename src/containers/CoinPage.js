@@ -42,7 +42,7 @@ class CoinPage extends React.Component {
         <Container>
           <Row className="mt-3">
             <Col>
-              <Link to="/">← Back</Link>
+              <Link to="/">{coinPage.back}</Link>
             </Col>
           </Row>
           <Row className="mt-3 mb-3">

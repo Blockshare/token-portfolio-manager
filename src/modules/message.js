@@ -24,7 +24,8 @@ export const tableMessage = {
 export const coinPage = {
 	price: 'Current Price',
 	marketCap: 'Market Cap',
-	volume: '24 Hour Volume'
+	volume: '24 Hour Volume',
+	back: '← Home'
 };
 
 export const buttons = {
