@@ -74,9 +74,7 @@ class App extends React.Component {
         <div className="App">
           <Navbar color="faded">
             <Container>
-              <NavbarToggler right onClick={this.toggle}/>
-              <NavbarBrand className="left-align caps bold">{message.appname}</NavbarBrand>
-              <NavbarBrand className="caps bold" href="/">{image}</NavbarBrand>
+              <NavbarBrand className="caps bold">{message.appname}</NavbarBrand>
               <Collapse isOpen={false} navbar>
                 <Nav className="ml-auto caps bold" navbar>
                   <NavItem className="mr-2">
@@ -84,8 +82,8 @@ class App extends React.Component {
                   </NavItem>
                 </Nav>
               </Collapse>
-              <div>{signoutButton}</div>
-              <Link className="right-align" to="/about-us">{message.about}</Link>
+              <div className="left-align">{image}</div>
+              <div className="right-align">{signoutButton}</div>
             </Container>
 
           </Navbar>
