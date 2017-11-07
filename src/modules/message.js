@@ -53,5 +53,6 @@ export const orderBook = {
 export const about = {
 	about: 'About',
 	aboutSection: 'Blockshare.io is a cryptocurrency and asset tracker on top of',
-	blockstack: 'Blockstack'
+	blockstack: 'Blockstack',
+	platform: 'platform'
 }
