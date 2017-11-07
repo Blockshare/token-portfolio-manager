@@ -11,7 +11,7 @@ export default () => (
       </Row>
       <Row className="mt-3">
         <h3>{about.About}</h3>
-        <p>{about.aboutSection} <a target="_blank"    href="https://blockstack.org">{about.blockstack}</a> platform.
+        <p>{about.aboutSection} <a target="_blank" href="https://blockstack.org">{about.blockstack}</a> {about.platform}.
         </p>
       </Row>
     </Container>
