@@ -23,6 +23,7 @@ export const tableMessage = {
 
 export const coinPage = {
 	price: 'Current Price',
+	holdings: 'Holdings Value',
 	marketCap: 'Market Cap',
 	volume: '24 Hour Volume',
 	back: '← Home'
@@ -55,4 +56,4 @@ export const about = {
 	aboutSection: 'Blockshare.io is a cryptocurrency and asset tracker on top of',
 	blockstack: 'Blockstack',
 	platform: 'platform'
-}
+};

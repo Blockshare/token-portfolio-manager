@@ -65,7 +65,7 @@ class CoinPage extends React.Component {
             </Col>
             <Col>
               <h4>{formatMoney(currency, value_in_currency)}
-                <small className="text-muted"><br/>Holdings Value</small>
+                <small className="text-muted"><br/>{coinPage.holdings}</small>
               </h4>
             </Col>
           </Row>
