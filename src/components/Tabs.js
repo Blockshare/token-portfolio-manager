@@ -44,6 +44,7 @@ export default class Tabs extends React.Component {
         <div className="container">
           <Nav tabs className="nav-pills">
             <NavItem>
+              {/* Coins/Cryptoassets Tab */}
               <NavLink
                   className={classnames({ active: this.state.activeTab === '1' })}
                   onClick={() => {
@@ -61,6 +62,16 @@ export default class Tabs extends React.Component {
                   }}
               >
                 {tabs.holdings} {holdingsTabLoading}
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                  className={classnames({ active: this.state.activeTab === '2' })}
+                  onClick={() => {
+                    this.toggle('3');
+                  }}
+              >
+                {tabs.news}
               </NavLink>
             </NavItem>
           </Nav>
