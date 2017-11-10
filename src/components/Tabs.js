@@ -2,6 +2,7 @@ import React from 'react';
 import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Button} from 'reactstrap';
 import classnames from 'classnames';
 import CoinList from './CoinList';
+import NewsList from './NewsList';
 import Loading from './Loading';
 import {message, tabs} from '../modules/message';
 
@@ -31,6 +32,17 @@ export default class Tabs extends React.Component {
         </div>
     );
 
+    const emptyNews = (
+      <div className="text-center mt-4">
+        <p>{message.newsMessage}</p>
+      </div>
+    );
+
+    const newsList = this.props.holdingsList.length > 0 ? (
+      <NewsList />
+    ) : emptyNews;
+
+
     // TODO: showing the holdings can be improved by removing holdingsList and just using holdings
     const holdingContent = this.props.holdingsList.length > 0 ? (
             <CoinList
@@ -55,6 +67,7 @@ export default class Tabs extends React.Component {
               </NavLink>
             </NavItem>
             <NavItem>
+              {/* Personal Crypto Portfolio */}
               <NavLink
                   className={classnames({ active: this.state.activeTab === '2' })}
                   onClick={() => {
@@ -65,8 +78,9 @@ export default class Tabs extends React.Component {
               </NavLink>
             </NavItem>
             <NavItem>
+              {/* News Tab */}
               <NavLink
-                  className={classnames({ active: this.state.activeTab === '2' })}
+                  className={classnames({ active: this.state.activeTab === '3' })}
                   onClick={() => {
                     this.toggle('3');
                   }}
@@ -90,6 +104,13 @@ export default class Tabs extends React.Component {
               <Row>
                 <Col sm="12">
                   {holdingContent}
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="3">
+              <Row>
+                <Col sm="12">
+                  {newsList}
                 </Col>
               </Row>
             </TabPane>
