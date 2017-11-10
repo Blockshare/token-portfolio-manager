@@ -3,14 +3,14 @@ export const message = {
 	about: 'About',
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
-	holdingMessage: 'There are currently no cryptoassets in your market basket.',
-	newsMessage: 'News Will Go Here'
+	holdingMessage: 'Please Sign In to see your portfolio.',
+	newsMessage: 'Please Sign In to see the Daily News.'
 };
 
 export const tabs = {
-	cryptoAssets: 'Coins',
+	cryptoAssets: 'Coins/Assests',
 	holdings: 'Portfolio',
-	news: 'News'
+	news: 'Daily News'
 };
 
 export const tableMessage = {
@@ -56,4 +56,8 @@ export const about = {
 	aboutSection: 'Blockshare.io is a cryptocurrency and asset tracker on top of',
 	blockstack: 'Blockstack',
 	platform: 'platform'
+};
+
+export const newsList = {
+	messaging: 'Welcome to the Daily News'
 };
