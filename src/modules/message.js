@@ -8,9 +8,9 @@ export const message = {
 };
 
 export const tabs = {
-	cryptoAssets: 'Cryptoassets',
+	cryptoAssets: 'Coins',
 	holdings: 'Portfolio',
-	news: 'Daily News Stream'
+	news: 'News'
 };
 
 export const tableMessage = {
