@@ -3,8 +3,8 @@ export const message = {
 	about: 'About',
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
-	holdingMessage: 'Please Sign In to see your portfolio.',
-	newsMessage: 'Please Sign In to see the Daily News.'
+	holdingMessage: 'Please Sign In to see your Portfolio.',
+	newsMessage: 'Please Sign In to see your Daily News.'
 };
 
 export const tabs = {
