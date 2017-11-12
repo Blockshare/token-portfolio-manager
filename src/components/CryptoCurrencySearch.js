@@ -1,4 +1,5 @@
 // Search for a specific Crypto Currency
+// This File Still Does Not Work with the Main Application and is Broken for Now.
 import React from 'react';
 import numeral from 'numeral';
 import { FormGroup, Input } from 'reactstrap';
@@ -24,6 +25,10 @@ export default class CurrencySearch extends React.Component {
 
 	render() {
     const props = this.props;
+    const coin = props.coin;
+    const holdings = props.holdings;
+    const currency = this.props.currency;
+    const amount = !!coin && coin.id && holdings && holdings[coin.id] ? holdings[coin.id] : 0;
 
 		return (
 			<div>
