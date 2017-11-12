@@ -1,5 +1,6 @@
 // Search for a specific Crypto Currency
 import React from 'react';
+import numeral from 'numeral';
 import { FormGroup, Input } from 'reactstrap';
 import { coinSearch } from '../modules/message';
 import { loadCoin } from '../modules/coin'; // Import loadCoinList 3rd Party API to use for Coin Search.
@@ -7,14 +8,17 @@ import { loadCoin } from '../modules/coin'; // Import loadCoinList 3rd Party API
 export default class CurrencySearch extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {value: '', results: 0}
+		this.state = {value: ''}
 		this.update = this.update.bind(this);
+	}
+
+	componentDidMount() {
+		{/* Add loadCoin functionality and figure out why it continuously breaks the app. */}
 	}
 
 	update(event) {
 		this.setState({
 			value: event.target.value,
-			results: loadCoin(event.target.value)
 		})
 	}
 
