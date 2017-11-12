@@ -61,3 +61,7 @@ export const about = {
 export const newsList = {
 	messaging: 'Welcome to the Daily News'
 };
+
+export const coinSearch = {
+	search: 'Search Currencies'
+};

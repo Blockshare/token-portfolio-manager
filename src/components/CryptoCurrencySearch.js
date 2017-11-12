@@ -1,6 +1,7 @@
 // Search for a specific Crypto Currency
 import React from 'react';
 import { FormGroup, Input } from 'reactstrap';
+import { coinSearch } from '../modules/message';
 import { loadCoin } from '../modules/coin'; // Import loadCoinList 3rd Party API to use for Coin Search.
 
 export default class CurrencySearch extends React.Component {
@@ -18,6 +19,8 @@ export default class CurrencySearch extends React.Component {
 	}
 
 	render() {
+    const props = this.props;
+
 		return (
 			<div>
 				<SearchBox txt={this.state.value}
@@ -39,7 +42,7 @@ const SearchBox = (props) => {
 const SearchResults = (props) => {
 	return (
 		<div id="results">
-			<p className="center">Coin Search</p>
+			<p className="center">{coinSearch.search}</p>
 		</div>
 	)
 }
