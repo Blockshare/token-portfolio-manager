@@ -52,7 +52,7 @@ class CoinPage extends React.Component {
           <Row className="mt-3 mb-3">
             <Col>
 
-              <h2>{icon}{coin.name}</h2>
+              <h2>{coin.name}</h2>
             </Col>
           </Row>
           <Row>
