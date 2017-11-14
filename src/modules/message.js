@@ -18,7 +18,7 @@ export const tableMessage = {
 	price: 'Price',
 	marketCap: 'Market Cap',
 	change: '(%) change',
-	holdings: 'Volume'
+	holdings: 'Holdings'
 };
 
 export const coinPage = {
