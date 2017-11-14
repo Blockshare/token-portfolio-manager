@@ -45,7 +45,6 @@ export default class CoinRow extends React.Component {
           <td>{formatted_price}</td>
           <td>{marketCap}</td>
           <td className={changeColor}>{coinPerc}%</td>
-          <td>Volume</td>
           <td>
             <strong>{holdingElem}</strong><br/>
             {valueElem}<br/>
