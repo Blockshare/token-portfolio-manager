@@ -17,13 +17,12 @@ export default class CoinList extends React.Component {
         <Table>
           <thead>
           <tr>
+            <th></th>
             <th>{tableMessage.asset}</th>
             <th>{tableMessage.price}</th>
             <th>{tableMessage.marketCap}</th>
             <th>{tableMessage.change}</th>
             <th>{tableMessage.holdings}</th>
-            <th>{tableMessage.supply}</th>
-            <th>{tableMessage.watch}</th>
           </tr>
           </thead>
           <tbody>
