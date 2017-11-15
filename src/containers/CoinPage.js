@@ -37,6 +37,10 @@ class CoinPage extends React.Component {
     const change_24h = numeral(coin['percent_change_24h']).value();
     const change_7d = numeral(coin['percent_change_7d']).value();
 
+    const icon = (
+        <img className="mr-2" src={`https://files.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`}/>
+    );
+
 
     return (
         <Container>
@@ -61,6 +65,7 @@ class CoinPage extends React.Component {
                   onSave={this.props.updateHoldings}
                   user={this.props.user}
                   signin={this.signin}
+                  currency={this.props.currency}
               />
             </Col>
             <Col>
