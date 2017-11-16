@@ -1,5 +1,5 @@
 export const message = {
-	appname: 'Blockshare.io',
+	appname: 'Tokenportfol.io',
 	about: 'About',
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
