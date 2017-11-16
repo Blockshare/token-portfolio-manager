@@ -1,7 +1,6 @@
 import React from 'react';
 import {Route, Link, withRouter} from 'react-router-dom';
 import About from './about';
-//import '../App.css';
 import '../Bass.css';
 import HomePage from './HomePage';
 import CoinPage from './CoinPage';
