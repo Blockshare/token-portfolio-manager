@@ -74,7 +74,7 @@ class HomePage extends React.Component {
               {currencyChangeEl}
             </Col>
             <Col xs="2" sm="2">
-              {/*<CurrencySearch/>*/}
+              <CurrencySearch/>
             </Col>
           </Row>
           <Row>
