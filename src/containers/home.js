@@ -2,19 +2,19 @@ import React from 'react'
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-//import '../App.css'
 import '../Bass.css';
 import {
   increment,
   incrementAsync,
   decrement,
   decrementAsync
-} from '../modules/counter'
+} from '../modules/counter';
+import { home } from '../modules/message';
 
 const Home = props => (
     <div className="App">
-      <h1>Home</h1>
-      <p>Count: {props.count}</p>
+      <h1>{home.home}</h1>
+      <p>{home.count} {props.count}</p>
 
       <p>
         <button onClick={props.increment} disabled={props.isIncrementing}>Increment</button>
