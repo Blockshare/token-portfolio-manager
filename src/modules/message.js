@@ -7,6 +7,11 @@ export const message = {
 	newsMessage: 'Please Sign In to see your Daily News.'
 };
 
+const home = {
+	home: 'Home',
+	count: 'Count: '
+};
+
 export const tabs = {
 	cryptoAssets: 'Coins/Assests',
 	holdings: 'Portfolio',
