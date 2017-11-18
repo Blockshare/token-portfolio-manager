@@ -64,7 +64,8 @@ export const about = {
 };
 
 export const newsList = {
-	messaging: 'Welcome to the Daily News'
+	messaging: 'Welcome to the Daily News',
+	soon: 'Daily News Feature Coming Soon...'
 };
 
 export const coinSearch = {
