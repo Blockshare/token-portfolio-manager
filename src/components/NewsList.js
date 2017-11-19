@@ -10,7 +10,7 @@ export default class NewsList extends React.Component {
     return (
       <div className="container">
         <br /><br />
-        <div className="italic bold">Daily News Feature Coming Soon...</div>
+        <div className="italic bold">{newsList.soon}</div>
       </div>
     );
   }

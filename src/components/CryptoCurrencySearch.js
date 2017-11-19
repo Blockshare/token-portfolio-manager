@@ -13,10 +13,6 @@ export default class CurrencySearch extends React.Component {
 		this.update = this.update.bind(this);
 	}
 
-	componentDidMount() {
-		{/* Add loadCoin functionality and figure out why it continuously breaks the app. */}
-	}
-
 	update(event) {
 		this.setState({
 			value: event.target.value,

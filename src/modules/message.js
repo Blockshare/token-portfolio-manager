@@ -1,5 +1,5 @@
 export const message = {
-	appname: 'Tokenportfol.io',
+	appname: 'tokenportfol.io',
 	about: 'About',
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
@@ -58,13 +58,14 @@ export const orderBook = {
 
 export const about = {
 	about: 'About',
-	aboutSection: 'Blockshare.io is a cryptocurrency and asset tracker on top of',
+	aboutSection: 'Tokenportfol.io is a cryptocurrency and asset tracker on top of',
 	blockstack: 'Blockstack',
 	platform: 'platform'
 };
 
 export const newsList = {
-	messaging: 'Welcome to the Daily News'
+	messaging: 'Welcome to the Daily News',
+	soon: 'Daily News Feature Coming Soon...'
 };
 
 export const coinSearch = {
