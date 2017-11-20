@@ -66,8 +66,6 @@ class HomePage extends React.Component {
             <Col xs="5" sm="5">
               {header}
             <Col xs="4" sm="4">
-              <CurrencySelector currency={this.props.currency}
-                                onChange={this.onCurrencyChange.bind(this)}/>
             </Col>
             </Col>
             <Col xs="5" sm="5">
@@ -75,6 +73,8 @@ class HomePage extends React.Component {
             </Col>
             <Col xs="2" sm="2">
               {/*<CurrencySearch/>*/}
+              <CurrencySelector currency={this.props.currency}
+                                onChange={this.onCurrencyChange.bind(this)}/>
             </Col>
           </Row>
           <Row>
