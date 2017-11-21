@@ -9,14 +9,15 @@ import { loadCoin } from '../modules/coin'; // Import loadCoinList 3rd Party API
 export default class CurrencySearch extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {value: ''}
+		this.state = {value: '', results: loadCoin}
 		this.update = this.update.bind(this);
 	}
 
 	update(event) {
 		this.setState({
 			value: event.target.value,
-		})
+			results: loadCoin
+		});
 	}
 
 	render() {
