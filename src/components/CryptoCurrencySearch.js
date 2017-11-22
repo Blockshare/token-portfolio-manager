@@ -13,6 +13,10 @@ export default class CurrencySearch extends React.Component {
 		this.update = this.update.bind(this);
 	}
 
+	componenentDidMount() {
+		// Load the loadCoin file and get it working.
+	}
+
 	update(event) {
 		this.setState({
 			value: event.target.value,
