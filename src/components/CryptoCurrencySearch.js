@@ -21,7 +21,7 @@ export default class CurrencySearch extends React.Component {
 	update(event) {
 		this.setState({
 			value: event.target.value,
-			results: loadCoin
+			results: this.props.loadCoin(/* function variables */)
 		});
 	}
 
