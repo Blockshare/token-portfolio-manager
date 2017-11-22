@@ -15,6 +15,7 @@ export default class CurrencySearch extends React.Component {
 
 	componenentDidMount() {
 		// Load the loadCoin file and get it working.
+	return this.props.loadCoin({/* get function variables to work and not break the application. */});
 	}
 
 	update(event) {
