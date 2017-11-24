@@ -9,7 +9,7 @@ import { loadCoin } from '../modules/coin'; // Import loadCoinList 3rd Party API
 export default class CurrencySearch extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {value: '', results: loadCoin}
+		this.state = {value: '',}
 		this.update = this.update.bind(this);
 	}
 
@@ -20,8 +20,7 @@ export default class CurrencySearch extends React.Component {
 
 	update(event) {
 		this.setState({
-			value: event.target.value,
-			results: this.props.loadCoin(/* function variables */)
+			value: event.target.value
 		});
 	}
 
