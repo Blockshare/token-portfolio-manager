@@ -48,9 +48,9 @@ class HomePage extends React.Component {
           {this.props.porfolioValueChange > 0 ? '↑' : '↓'}
         </span>);
     const currencyValue = (
-        <h3>{formatMoney(this.props.currency, this.props.portfolioValue)}<br/>
-          <small className="text-muted">{message.holdings}</small>
-        </h3>
+        <h1>{formatMoney(this.props.currency, this.props.portfolioValue)}<br/>
+          <small className="text-muted bold h1">{message.holdings}</small>
+        </h1>
     )
 
     const currencyChangeEl = this.props.user ?  (
