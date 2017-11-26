@@ -50,7 +50,7 @@ class HomePage extends React.Component {
     const currencyValue = (
         <h1>{formatMoney(this.props.currency, this.props.portfolioValue)}<br/>
           <small className="text-muted bold h1">{message.holdings}</small>
-          <small className="text-muted">Total Value</small>
+          <small className="text-muted">{message.value}</small>
         </h1>
     )
 
