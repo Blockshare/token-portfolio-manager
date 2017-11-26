@@ -4,7 +4,8 @@ export const message = {
 	signInButton: 'Sign In with Blockstack',
 	changeHours24: 'Change in the last 24 hours.',
 	holdingMessage: 'Please Sign In to see your Portfolio.',
-	newsMessage: 'Please Sign In to see your Daily News.'
+	newsMessage: 'Please Sign In to see your Daily News.',
+	value: 'Total Value'
 };
 
 const home = {
