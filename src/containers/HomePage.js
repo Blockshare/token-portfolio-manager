@@ -70,7 +70,7 @@ class HomePage extends React.Component {
             </Col>
             </Col>
             <Col xs="5" sm="5">
-              <CurrencySearch/>
+              {/*<CurrencySearch />*/}
             </Col>
             <Col xs="2" sm="2">
               {currencyChangeEl}
