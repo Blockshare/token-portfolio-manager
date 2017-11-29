@@ -15,9 +15,7 @@ import {formatMoney} from '../utils';
 class NewsPage extends React.Component {
 	static ProtoTypes = {}
 
-	componentDidMount() {
-		{/* Add Components Here.*/}
-	}
+	
 
 	render() {
 		{/* Add News Information Here. */}
