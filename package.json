@@ -1,8 +1,8 @@
 {
-  "name": "blockshare.io",
+  "name": "tokenportfol.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://blockshare.io",
+  "homepage": "https://tokenportfol.io",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "axios": "^0.16.2",
