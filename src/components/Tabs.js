@@ -76,8 +76,8 @@ export default class Tabs extends React.Component {
               >
                 {tabs.holdings} {holdingsTabLoading}
               </NavLink>
-            </*NavItem>
-            {/<NavItem>
+            </NavItem>
+            {/*<NavItem>
               <NavLink
                   className={classnames({ active: this.state.activeTab === '3' })}
                   onClick={() => {
