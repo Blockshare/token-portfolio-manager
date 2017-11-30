@@ -14,7 +14,7 @@ const home = {
 };
 
 export const tabs = {
-	cryptoAssets: 'Coins/Assests',
+	cryptoAssets: 'Coins/Assets',
 	holdings: 'Portfolio',
 	news: 'Daily News'
 };
