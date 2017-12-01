@@ -64,7 +64,7 @@ export const about = {
 	platform: 'platform'
 };
 
-export const newsList = {
+	export const newsList = {
 	messaging: 'Welcome to the Daily News',
 	soon: 'Daily News Feature Coming Soon...'
 };
