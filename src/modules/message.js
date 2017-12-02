@@ -32,7 +32,7 @@ export const coinPage = {
 	holdings: 'Holdings Value',
 	marketCap: 'Market Cap',
 	volume: '24 Hour Volume',
-	back: '← Home'
+	back: '← Home',
 };
 
 export const buttons = {
@@ -47,7 +47,8 @@ export const hourlyChanges = {
 };
 
 export const coinPageInfo = {
-	holdings: 'Holdings'
+	holdings: 'Holdings',
+	change: 'Sign in to change'
 };
 
 export const orderBook = {
