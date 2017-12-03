@@ -48,7 +48,8 @@ export const hourlyChanges = {
 
 export const coinPageInfo = {
 	holdings: 'Holdings',
-	change: 'Sign in to change'
+	signInToChange: 'Sign in to change',
+	change: 'Change'
 };
 
 export const orderBook = {
