@@ -38,7 +38,7 @@ class CoinPage extends React.Component {
     const change_7d = numeral(coin['percent_change_7d']).value();
 
     const icon = (
-        <img className="mr-2" src={`https://files.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`}/>
+        <img className="mr-2" src={`https://files.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`} alt="" />
     );
 
 
