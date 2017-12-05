@@ -13,11 +13,5 @@ import CoinPageTabs from '../components/CoinPageTabs';
 import {formatMoney} from '../utils';
 
 class NewsPage extends React.Component {
-	static ProtoTypes = {}
-
-	
-
-	render() {
-		{/* Add News Information Here. */}
-	}
+	// Pull data from 3rd party API when found.
 }
