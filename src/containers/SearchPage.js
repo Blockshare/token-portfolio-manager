@@ -1,3 +1,4 @@
+// This page does not currently worked but I am working through it. Albeit slowly.
 import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import {bindActionCreators} from 'redux';
