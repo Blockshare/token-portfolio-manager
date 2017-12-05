@@ -63,7 +63,8 @@ export default class CoinHoldingBox extends React.Component {
                   <Input value={this.props.holdingInput}
                          onChange={(e) => this.props.updateHoldingInput(e.target.value)}
                          name="holdings" id="holdings"
-                         placeholder="Enter amount"/>
+                         placeholder="Enter amount"
+                  />
 
                   <InputGroupAddon>{coin.symbol}</InputGroupAddon>
                 </InputGroup>
