@@ -38,6 +38,7 @@ class App extends React.Component {
       user = new blockstack.Person(userData.profile);
       this.props.signinSuccess(user);
       this.props.loadHoldings();
+
       // Check to make sure the users avatar is still available from whatever storage they are using.
       console.log(user.avatarUrl());
 
@@ -65,7 +66,7 @@ class App extends React.Component {
     // Load Blockstack Identity Image.
     const image = user ? (
         <div>
-          <img className="circle" src={this.props.user.avatarUrl()} width="64" height="64" />
+          <img className="circle" src={this.props.user.avatarUrl()} width="64" height="64" alt="" />
         </div>
       ) : null;
 
@@ -87,9 +88,9 @@ class App extends React.Component {
 
           </Navbar>
           <main>
-            <Route exact path="/" component={HomePage}/>
-            <Route path="/coin/:coin" component={CoinPage}/>
-            <Route exact path="/about-us" component={About}/>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/coin/:coin" component={CoinPage} />
+            <Route exact path="/about-us" component={About} />
           </main>
         </div>
     )
