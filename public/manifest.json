@@ -3,7 +3,7 @@
   "name": "TokenPortfol.io",
   "icons": [
     {
-      "src": "blockshare-logo.png",
+      "src": "/blockshare-logo.png",
       "sizes": "192x192",
       "type": "image/png"
     }
