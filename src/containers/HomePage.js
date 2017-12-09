@@ -71,11 +71,11 @@ class HomePage extends React.Component {
             </Col>
             <Col xs="5" sm="5">
               {/*<CurrencySearch />*/}
+              {currencyChangeEl}
             </Col>
             <Col xs="2" sm="2">
-              {currencyChangeEl}
-              {/*<CurrencySelector currency={this.props.currency}
-                                onChange={this.onCurrencyChange.bind(this)}/>*/}
+              <CurrencySelector currency={this.props.currency}
+                                onChange={this.onCurrencyChange.bind(this)}/>
             </Col>
           </Row>
           <Row>
