@@ -53,11 +53,6 @@ export const signinSuccess = (user) => {
 
 export const signout = () => {
   window.blockstack.signUserOut(window.location.href)
-  // return dispatch => {
-  //   dispatch({
-  //     type: SIGNOUT
-  //   })
-  // }
 }
 
 
