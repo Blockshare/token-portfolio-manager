@@ -39,7 +39,7 @@ class App extends React.Component {
       this.props.signinSuccess(user);
       this.props.loadHoldings();
 
-      // Check to make sure the users avatar is still available from whatever storage they are using.
+      // Avatar check in console.
       console.log(user.avatarUrl());
 
     } else if (blockstack.isSignInPending()) {
