@@ -81,6 +81,7 @@ export const loadCoinList = (curr = '') => {
     if (!curr) {
       curr = getState().coin.currency;
     }
+    // load the top 300 coins currently live on coinmarketcap.com
     window.axios.get(`https://api.coinmarketcap.com/v1/ticker/?limit=300&convert=${curr}`).then((response) => {
       dispatch({
         type: LOAD_COIN_LIST_SUCCESS,
