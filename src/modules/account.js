@@ -122,5 +122,5 @@ export const porfolioValueChange = (state) => {
 }
 
 export const derived_holdings = (state) => {
-  // this method creates the
+  // Nothing here yet.
 }
