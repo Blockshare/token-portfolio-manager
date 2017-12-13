@@ -39,8 +39,7 @@ class App extends React.Component {
       user = new blockstack.Person(userData.profile);
       this.props.signinSuccess(user);
       this.props.loadHoldings();
-
-      // Avatar check in console.
+      // Avatar check in console to make sure identity image works correctly.
       console.log(user.avatarUrl());
 
     } else if (blockstack.isSignInPending()) {
