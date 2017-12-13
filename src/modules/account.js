@@ -53,11 +53,6 @@ export const signinSuccess = (user) => {
 
 export const signout = () => {
   window.blockstack.signUserOut(window.location.href)
-  // return dispatch => {
-  //   dispatch({
-  //     type: SIGNOUT
-  //   })
-  // }
 }
 
 
@@ -127,5 +122,5 @@ export const porfolioValueChange = (state) => {
 }
 
 export const derived_holdings = (state) => {
-  // this method creates the
+  // Nothing here yet.
 }

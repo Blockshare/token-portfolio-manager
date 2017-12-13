@@ -1,3 +1,5 @@
+// This is the language file so that all the copy lives in one file and can be used anywhere.
+
 export const message = {
 	appname: 'tokenportfolio',
 	about: 'About',
