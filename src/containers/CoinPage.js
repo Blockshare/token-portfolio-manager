@@ -1,3 +1,4 @@
+// Coin Holdings page.
 import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import {bindActionCreators} from 'redux';
