@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SPIN = '-\\|/'
+const SPIN = '-#*\\|//*#-'
 
 export default class Loading extends React.Component {
 
