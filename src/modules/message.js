@@ -10,7 +10,7 @@ export const message = {
 	value: 'Total Value'
 };
 
-const home = {
+export const home = {
 	home: 'Home',
 	count: 'Count: '
 };
