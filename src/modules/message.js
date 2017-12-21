@@ -18,7 +18,7 @@ export const home = {
 export const tabs = {
 	cryptoAssets: 'Coins/Assets',
 	holdings: 'Portfolio',
-	news: 'Daily News'
+	news: 'Daily Crypto News'
 };
 
 export const tableMessage = {
