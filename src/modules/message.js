@@ -10,7 +10,7 @@ export const message = {
 	value: 'Total Value'
 };
 
-const home = {
+export const home = {
 	home: 'Home',
 	count: 'Count: '
 };
@@ -18,7 +18,7 @@ const home = {
 export const tabs = {
 	cryptoAssets: 'Coins/Assets',
 	holdings: 'Portfolio',
-	news: 'Daily News'
+	news: 'Daily Crypto News'
 };
 
 export const tableMessage = {
@@ -70,7 +70,7 @@ export const about = {
 
 	export const newsList = {
 	messaging: 'Welcome to the Daily News',
-	soon: 'Daily News Feature Coming Soon...'
+	soon: 'Daily Crypto News Feature Coming Soon...'
 };
 
 export const coinSearch = {
